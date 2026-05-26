@@ -1,0 +1,50 @@
+# CA Lab Works – VHDL Digital Design
+
+## 📌 Introduction
+This repository contains basic Digital Logic Design experiments implemented using VHDL (VHSIC Hardware Description Language). The designs are simulated using the open-source tool GHDL and waveform analysis is done using GTKWave.
+
+---
+
+## 🎯 Objective
+To design, implement, and simulate basic digital logic gates using VHDL and verify their functionality using open-source simulation tools.
+
+---
+
+## 🛠️ Tools Used
+- VHDL (Hardware Description Language)
+- GHDL (Compiler & Simulator)
+- GTKWave (Waveform Viewer)
+- Visual Studio Code
+
+---
+
+## 🔧 Implemented Circuits
+- AND Gate
+- OR Gate
+- NOT Gate
+- NAND Gate
+- NOR Gate
+- XOR Gate
+- XNOR Gate
+
+Each circuit includes:
+- VHDL design file
+- Testbench file
+- Simulation output (waveform)
+
+---
+
+## ⚙️ Simulation Flow
+1. Write VHDL design code
+2. Write testbench
+3. Compile using GHDL
+4. Run simulation
+5. View waveform using GTKWave
+
+Example commands:
+```bash
+ghdl -a design.vhdl
+ghdl -a testbench.vhdl
+ghdl -e testbench
+ghdl -r testbench --vcd=wave.vcd
+gtkwave wave.vcd
